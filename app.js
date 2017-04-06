@@ -40,7 +40,7 @@ app.get('/Tryme Scheduler/webhook/', function (req, res) {
 //facebook token
 const tokens = {
 
-	"Tryme Scheduler":"EAAaXcVlyIQ4BAFLQ7sJHv2SD2ACUnC6e4dHZAdJZC4aemhurNSZAYZBmoGycbknJBGdThhKS2NsdzW5FEbZATzLlsQsW7UPlKWIU9tuXyMWyp33LZAtlkKWIZBqvYWiRnsWBgZCuNaUK2gBo0d2l4e0n5cPme6OSYyo1zm2RebroAwZDZD"
+	"Tryme Scheduler":"EAAYgj0kGUAEBAHYNCsTGfGANhKUbhbIZCLx5O7tcViRMznoLcuzZCk5n96CwynG83Qhs77bTjr2UGGfPSXHlAEApcjuvYaTZCdl6QDdUxaZAC1P6MJYCDMIcVxMK9HZCqokSTWTg40pKwnhryAekQDrDJyz0grTpFwuzwZBEFyPwZDZD"
 }
 
 //webhook
