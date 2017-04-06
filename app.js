@@ -24,13 +24,13 @@ app.get('', function(req, res){
 })
 
 // for Facebook verification
-app.get('/Tryme Scheduler/webhook/', function (req, res) {
+app.get('/TrymeScheduler/webhook/', function (req, res) {
     if (req.query['hub.verify_token'] === '12345') {
         res.send(req.query['hub.challenge'])
     }
     res.send('Error, wrong token')
 })
-app.get('/Tryme Scheduler/webhook/', function (req, res) {
+app.get('/TrymeScheduler/webhook/', function (req, res) {
 	if (req.query['hub.verify_token'] === '12345') {
 		res.send(req.query['hub.challenge'])
 	}
@@ -40,11 +40,11 @@ app.get('/Tryme Scheduler/webhook/', function (req, res) {
 //facebook token
 const tokens = {
 
-	"Tryme Scheduler":"EAAYgj0kGUAEBAHYNCsTGfGANhKUbhbIZCLx5O7tcViRMznoLcuzZCk5n96CwynG83Qhs77bTjr2UGGfPSXHlAEApcjuvYaTZCdl6QDdUxaZAC1P6MJYCDMIcVxMK9HZCqokSTWTg40pKwnhryAekQDrDJyz0grTpFwuzwZBEFyPwZDZD"
+	"TrymeScheduler":"EAAYgj0kGUAEBAHYNCsTGfGANhKUbhbIZCLx5O7tcViRMznoLcuzZCk5n96CwynG83Qhs77bTjr2UGGfPSXHlAEApcjuvYaTZCdl6QDdUxaZAC1P6MJYCDMIcVxMK9HZCqokSTWTg40pKwnhryAekQDrDJyz0grTpFwuzwZBEFyPwZDZD"
 }
 
 //webhook
-app.post('/Tryme Scheduler/webhook/', function (req, res) {
+app.post('/TrymeScheduler/webhook/', function (req, res) {
 	let token = tokens.TrymeScheduler
 	let messaging_events = req.body.entry[0].messaging
 	for (let i = 0; i < messaging_events.length; i++) {
@@ -279,7 +279,7 @@ function sendCheckinReminderMessage(sender, token) {
 						"arrival_time": "2016-01-05T17:30"
 					}
 				}],
-				"checkin_url": "https://enigmatic-atoll-16095.herokuapp.com/Tryme Scheduler/checkin.html"
+				"checkin_url": "https://enigmatic-atoll-16095.herokuapp.com/TrymeScheduler/checkin.html"
 			}
 		}
 	}
@@ -289,7 +289,7 @@ function sendCheckinReminderMessage(sender, token) {
 // Send Boarding Pass Message
 function sendBoardingPassMessage(sender, token) {
 	let intro_message = "You are checked in."
-	var root_url = "https://enigmatic-atoll-16095.herokuapp.com/Tryme Scheduler/img/"
+	var root_url = "https://enigmatic-atoll-16095.herokuapp.com/TrymeScheduler/img/"
 	let logo_image_url = root_url + "logo.png"
 	let header_image_url = root_url + "header.png"
 	let above_bar_code_image_url = root_url + "bar_code.png"
