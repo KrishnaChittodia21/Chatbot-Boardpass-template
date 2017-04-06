@@ -24,7 +24,7 @@ app.get('', function(req, res){
 })
 
 // for Facebook verification
-app.get('/GetNews/webhook/', function (req, res) {
+app.get('/Tryme Scheduler/webhook/', function (req, res) {
     if (req.query['hub.verify_token'] === '12345') {
         res.send(req.query['hub.challenge'])
     }
