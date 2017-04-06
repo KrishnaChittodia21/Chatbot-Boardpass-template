@@ -279,7 +279,7 @@ function sendCheckinReminderMessage(sender, token) {
 						"arrival_time": "2016-01-05T17:30"
 					}
 				}],
-				"checkin_url": "https://afternoon-savannah-53641.herokuapp.com/Tryme Scheduler/checkin.html"
+				"checkin_url": "https://enigmatic-atoll-16095.herokuapp.com/Tryme Scheduler/checkin.html"
 			}
 		}
 	}
@@ -289,7 +289,7 @@ function sendCheckinReminderMessage(sender, token) {
 // Send Boarding Pass Message
 function sendBoardingPassMessage(sender, token) {
 	let intro_message = "You are checked in."
-	var root_url = "https://afternoon-savannah-53641.herokuapp.com/Tryme Scheduler/img/"
+	var root_url = "https://enigmatic-atoll-16095.herokuapp.com/Tryme Scheduler/img/"
 	let logo_image_url = root_url + "logo.png"
 	let header_image_url = root_url + "header.png"
 	let above_bar_code_image_url = root_url + "bar_code.png"
